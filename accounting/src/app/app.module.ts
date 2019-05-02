@@ -10,12 +10,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { GroceriesServiceProvider } from '../providers/groceries-service/groceries-service';
-import { InputDialogServiceProvider } from '../providers/input-dialog-service/input-dialog-service';
-import { SocialSharing } from '@ionic-native/social-sharing';
-import { HttpClientModule } from '@angular/common/http';
-
-
+import { AccountingServiceProvider } from '../providers/accounting-service/accounting-service';
 
 @NgModule({
   declarations: [
@@ -27,7 +22,6 @@ import { HttpClientModule } from '@angular/common/http';
   ],
   imports: [
     BrowserModule,
-    HttpClientModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
@@ -42,9 +36,7 @@ import { HttpClientModule } from '@angular/common/http';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    GroceriesServiceProvider,
-    InputDialogServiceProvider,
-    SocialSharing
+    AccountingServiceProvider
   ]
 })
 export class AppModule {}
