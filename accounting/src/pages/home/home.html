@@ -1,77 +1,36 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Grocery Ionic App</ion-title>
+    <ion-title text-center>Social Media Ionic App</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
   <ion-list>
-    <ion-item-sliding *ngFor="let item of loadItems(); let i = index">
-      <!--let item of items is calling JS array, let i = index provides number for index-->
-      <ion-item>
-        <ion-label>
-          <h2>{{item.name}}</h2>
-          <p>{{item.quantity}}</p>
-        </ion-label>
-      </ion-item>
-
-      <ion-item-options>
-
-        <button (click)="editItem(item, i)" ion-button color="primary" icon-start>
-          <!--in the click function of removeItems(item, i), we are passing in the item and the index-->
-          <ion-icon name="create"></ion-icon>
-          Edit
-        </button>
-
-        <button (click)="removeItem(item, i)" ion-button color="danger" icon-start>
-          <!--in the click function of removeItems(item, i), we are passing in the item and the index-->
-          <ion-icon name="trash"></ion-icon>
-          Delete
-        </button>
-
-
-
-
-      </ion-item-options>
-    </ion-item-sliding>
-
-    <ion-fab right bottom>
-      <button (click)="addItem()" ion-fab>
-        <ion-icon name="add"></ion-icon>
-      </button>
-    </ion-fab>
-
-
-
-
-
-
-
     <ion-card *ngFor="let item of loadItems(); let i = index">
 
       <ion-item>
         <ion-avatar item-start>
-          <img src="../../assets/imgs/marty-avatar.png">
+          <img src="{{item.avatar}}">
         </ion-avatar>
         <h2>{{item.name}}</h2>
-        <p>{{item.quantity}}</p>
+        <p>{{item.date}}</p>
       </ion-item>
     
-      <img src="../../assets/imgs/advance-card-bttf.png">
+      <img src="{{item.picture}}">
     
       <ion-card-content>
-        <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.</p>
+        <p>{{item.description}}</p>
       </ion-card-content>
     
       <ion-row>
         <ion-col>
-          <button ion-button icon-start clear small>
+          <button ion-button icon-start clear small (click)="openModal()">
             <ion-icon name="text"></ion-icon>
-            <div>4 Comments</div>
+            <div>{{item.comments}} Comments</div>
           </button>
         </ion-col>
         <ion-col>
-          <button ion-button icon-start clear small>
+          <button ion-button icon-start clear small (click)="removeItem(item, i)">
             <ion-icon name="trash"></ion-icon>
             <div>Delete</div>
           </button>
@@ -85,8 +44,12 @@
       </ion-row>
     
     </ion-card>
-
-
-
   </ion-list>
 
+  <ion-fab right bottom>
+    <button (click)="addItem()" ion-fab>
+      <ion-icon name="add"></ion-icon>
+    </button>
+  </ion-fab>
+
+</ion-content>

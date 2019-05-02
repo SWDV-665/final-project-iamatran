@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { ItemSliding } from 'ionic-angular';
 
 /*
   Generated class for the AccountingServiceProvider provider.
@@ -12,21 +11,22 @@ export class AccountingServiceProvider {
 
   items = [
     {
-        name: "Milk",
-        quantity: 2
+      name: "Milk",
+      date: "March 26, 2019",
+      description: "Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy",
+      comments: 4,
+      avatar: "../../assets/imgs/marty-avatar.png",
+      picture: "../../assets/imgs/advance-card-bttf.png"
     },
     {
-        name: "Bread",
-        quantity: 1
+      name: "Candy",
+      date: "March 26, 2019",
+      description: "Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy",
+      comments: 27,
+      avatar: "../../assets/imgs/marty-avatar.png",
+      picture: "../../assets/imgs/advance-card-bttf.png"
     },
-    {
-        name: "Banana",
-        quantity: 3
-    },
-    {
-        name: "Sugar",
-        quantity: 1
-    },
+
 
   ];
 /*
