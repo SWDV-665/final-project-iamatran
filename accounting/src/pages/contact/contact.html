@@ -1,17 +1,24 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>
-      Contact
-    </ion-title>
+    <ion-title>Grocery Ionic App</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content>
+<ion-content padding>
   <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
-    <ion-item>
-      <ion-icon name="ionic" item-start></ion-icon>
-      @ionicframework
-    </ion-item>
+
+      <!--let item of items is calling JS array, let i = index provides number for index-->
+      <ion-item  *ngFor="let item of loadItems(); let i = index">
+        <ion-label>
+          <h2>{{item.name}}</h2>
+          <p>{{item.quantity}}</p>
+        </ion-label>
+      </ion-item>
+
+
+
+
+
+
   </ion-list>
-</ion-content>
+meow?
