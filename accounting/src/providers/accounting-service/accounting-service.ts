@@ -29,8 +29,20 @@ export class AccountingServiceProvider {
     },
 
   ];
+/*
+name:
+date:
+description:
+comments:
+avatar:
+picture:
+*/
 
-
+/*
+commentName:
+replyName:
+commentReply:
+*/
 
 
 
