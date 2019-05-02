@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { ItemSliding } from 'ionic-angular';
 
 /*
   Generated class for the AccountingServiceProvider provider.
@@ -30,17 +31,19 @@ export class AccountingServiceProvider {
   ];
 
 
+
+
+
   constructor() {
     console.log('Hello AccountingServiceProvider Provider');
 
   }
 
 
-
-
   getItems() {
     return this.items;
   }
+
 
   removeItem(index) {
     this.items.splice(index, 1);
