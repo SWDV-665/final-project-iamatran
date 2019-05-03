@@ -13,7 +13,7 @@ export class AccountingServiceProvider {
     {
       name: "Steve Rogers",
       date: "May 3, 2019",
-      description: "The film is expected to gross over 2 BILLION DOLLARS before the weekend is over.. INSANE.",
+      description: "What a truly unforgetable and amazing experience like no other. The film is expected to gross over 2 BILLION DOLLARS before the weekend is over.. INSANE.",
       comments: 27,
       avatar: "../../assets/imgs/a1.jpg",
       picture: "../../assets/imgs/p1.jpg",
@@ -68,7 +68,7 @@ export class AccountingServiceProvider {
     {
       name: "Beastie Boyz",
       date: "April 11, 2019",
-      description: "(That stressed me out, wow) But YES finally seeing my faves Half Moon Run in November!",
+      description: "(That stressed me out, wow) But YES finally seeing my faves Half Moon Run in November! Maybe this time we can finnaly make the run in under 12 parsecs! I have a bad feeling about this...",
       comments: 21,
       avatar: "../../assets/imgs/a6.jpg",
       picture: "../../assets/imgs/p6.jpg",

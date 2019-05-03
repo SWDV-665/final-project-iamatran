@@ -54,19 +54,19 @@ export class ModalPage {
       inputs: [
         {
           name: 'modalName',
-          value: 'CandyBoy'
+          value: 'Tom Holland'
         },
         {
           name: 'modalComment',
-          value: 'That is so fetch! Its never gunna happen!'
+          value: 'This app is really really great!!!'
         },
         {
           name: 'modalAvatar',
-          value: '../../assets/imgs/marty-avatar.png'
+          value: '../../assets/imgs/profile.jpg'
         },
         {
           name: 'avatar',
-          value: '../../assets/imgs/marty-avatar.png'
+          value: '../../assets/imgs/profile.jpg'
         },
       ],
       buttons: [

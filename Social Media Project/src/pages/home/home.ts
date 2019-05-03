@@ -67,11 +67,11 @@ export class HomePage {
       inputs: [
         {
           name: 'name',
-          value: 'Name'
+          value: 'Tom Holland'
         },
         {
           name: 'date',
-          value: 'March 26, 2019'
+          value: 'May 5, 2019'
         },
         {
           name: 'description',
@@ -79,11 +79,11 @@ export class HomePage {
         },
         {
           name: 'avatar',
-          value: '../../assets/imgs/advance-card-bttf.png'
+          value: '../../assets/imgs/profile.jpg'
         },
         {
           name: 'modalAvatar',
-          value: '../../assets/imgs/marty-avatar.png'
+          value: '../../assets/imgs/profile.jpg'
         }
       ],
       buttons: [
