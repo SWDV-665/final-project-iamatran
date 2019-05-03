@@ -16,7 +16,10 @@ export class AccountingServiceProvider {
       description: "Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy",
       comments: 4,
       avatar: "../../assets/imgs/marty-avatar.png",
-      picture: "../../assets/imgs/advance-card-bttf.png"
+      picture: "../../assets/imgs/advance-card-bttf.png",
+      modalName:"",
+      modalComment:"",
+      modalAvatar: ""
     },
     {
       name: "Candy",
@@ -24,7 +27,10 @@ export class AccountingServiceProvider {
       description: "Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy",
       comments: 27,
       avatar: "../../assets/imgs/marty-avatar.png",
-      picture: "../../assets/imgs/advance-card-bttf.png"
+      picture: "../../assets/imgs/advance-card-bttf.png",
+      modalName: "",
+      modalComment: "",
+      modalAvatar: ""
     },
 
 
@@ -39,9 +45,9 @@ picture:
 */
 
 /*
-commentName:
-replyName:
-commentReply:
+modalName:
+modalComment:
+modalAvatar:
 */
 
 
