@@ -17,9 +17,9 @@ export class AccountingServiceProvider {
       comments: 4,
       avatar: "../../assets/imgs/marty-avatar.png",
       picture: "../../assets/imgs/advance-card-bttf.png",
-      modalName:"",
-      modalComment:"",
-      modalAvatar: ""
+      modalName:"Reliant K Swiss",
+      modalComment:"It's Chapstick and Chapped Lips and Things Like Chemistry",
+      modalAvatar: "../../assets/imgs/marty-avatar.png"
     },
     {
       name: "Candy",
@@ -28,9 +28,9 @@ export class AccountingServiceProvider {
       comments: 27,
       avatar: "../../assets/imgs/marty-avatar.png",
       picture: "../../assets/imgs/advance-card-bttf.png",
-      modalName: "",
-      modalComment: "",
-      modalAvatar: ""
+      modalName: "Nappy Boy Radio",
+      modalComment: "She want that Lovey Dovey and Kiss Kiss",
+      modalAvatar: "../../assets/imgs/marty-avatar.png"
     },
 
 

@@ -53,20 +53,20 @@ export class ModalPage {
       message: "Please enter your post details...",
       inputs: [
         {
-          name: 'name',
-          value: 'Name'
+          name: 'modalName',
+          value: 'CandyBoy'
         },
         {
-          name: 'date',
-          value: 'March 26, 2019'
+          name: 'modalComment',
+          value: 'That is so fetch! Its never gunna happen!'
         },
         {
-          name: 'description',
-          value: 'Omg, this app is so awesome!!!'
+          name: 'modalAvatar',
+          value: '../../assets/imgs/marty-avatar.png'
         },
         {
           name: 'avatar',
-          value: '../../assets/imgs/advance-card-bttf.png'
+          value: '../../assets/imgs/marty-avatar.png'
         },
       ],
       buttons: [

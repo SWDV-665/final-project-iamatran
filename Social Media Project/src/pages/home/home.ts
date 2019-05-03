@@ -81,6 +81,10 @@ export class HomePage {
           name: 'avatar',
           value: '../../assets/imgs/advance-card-bttf.png'
         },
+        {
+          name: 'modalAvatar',
+          value: '../../assets/imgs/marty-avatar.png'
+        }
       ],
       buttons: [
         {

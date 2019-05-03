@@ -19,10 +19,10 @@
     <ion-item *ngFor="let item of loadItems(); let i = index">
 
         <ion-avatar item-start>
-          <img src="{{item.avatar}}">
+          <img src="{{item.modalAvatar}}">
         </ion-avatar>
-        <h2>{{item.name}}</h2>
-        <p>{{item.description}}</p>
+        <h2>{{item.modalName}}</h2>
+        <p>{{item.modalComment}}</p>
         <button ion-button clear item-end  (click)="shareItem()"><ion-icon name="share" ></ion-icon><div>&nbsp;Share</div></button>
 
  
