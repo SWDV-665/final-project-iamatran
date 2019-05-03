@@ -4,6 +4,7 @@ import { NavController } from 'ionic-angular';
 import { ToastController } from 'ionic-angular';
 import { AlertController } from 'ionic-angular';
 import { AccountingServiceProvider } from '../../providers/accounting-service/accounting-service';
+import { SocialSharing } from '@ionic-native/social-sharing';
 
 
 /**
@@ -20,7 +21,7 @@ import { AccountingServiceProvider } from '../../providers/accounting-service/ac
 })
 export class ModalPage {
 
-  constructor(private view: ViewController, public navCtrl: NavController, public toastCtrl: ToastController, public alertCtrl: AlertController, public dataService: AccountingServiceProvider) {
+  constructor(private view: ViewController, public navCtrl: NavController, public toastCtrl: ToastController, public alertCtrl: AlertController, public dataService: AccountingServiceProvider, public socialSharing: SocialSharing) {
   }
 
 
@@ -88,7 +89,23 @@ export class ModalPage {
   }
 
 
+  shareItem(item, index) {
+    console.log("Sharing Item - ", item, index);
+    const toast = this.toastCtrl.create({
+        message: "Shared using Cordova Native Plugin..." ,
+        duration: 3000
+    });
+    toast.present();
 
+    let message = "Social Items - Name: " + item + " - Description:" + item;
+    let subject = "Shared via Social Media Ionic App";
+    this.socialSharing.share(message, subject).then(() => {
+      console.log("Shared using Cordova Native Plugin");
+    }).catch((error) => {
+      console.error("Received Error while Sharing" , error)
+    });
+
+  }
 
   closeModal(){
     this.view.dismiss();

@@ -11,6 +11,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { AccountingServiceProvider } from '../providers/accounting-service/accounting-service';
+import { SocialSharing } from '@ionic-native/social-sharing';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { AccountingServiceProvider } from '../providers/accounting-service/accou
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    AccountingServiceProvider
+    AccountingServiceProvider,
+    SocialSharing
   ]
 })
 export class AppModule {}
