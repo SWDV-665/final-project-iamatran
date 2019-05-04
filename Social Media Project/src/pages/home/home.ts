@@ -78,6 +78,14 @@ export class HomePage {
           value: 'Omg, this app is so awesome!!!'
         },
         {
+          name: 'modalName',
+          value: 'Tom Holland'
+        },
+        {
+          name: 'modalComment',
+          value: 'This app is really really great!!!'
+        },
+        {
           name: 'avatar',
           value: '../../assets/imgs/profile.jpg'
         },

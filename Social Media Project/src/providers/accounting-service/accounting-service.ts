@@ -33,7 +33,7 @@ export class AccountingServiceProvider {
       modalAvatar: "../../assets/imgs/ma2.jpg"
     },
     {
-      name: "This is fine.",
+      name: "The Comister",
       date: "March 26, 2019",
       description: "This is literally every student studying during finals week:",
       comments: 13,

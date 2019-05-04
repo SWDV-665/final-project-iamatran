@@ -61,6 +61,18 @@ export class ModalPage {
           value: 'This app is really really great!!!'
         },
         {
+          name: 'name',
+          value: 'Tom Holland'
+        },
+        {
+          name: 'date',
+          value: 'May 5, 2019'
+        },
+        {
+          name: 'description',
+          value: 'Omg, this app is so awesome!!!'
+        },
+        {
           name: 'modalAvatar',
           value: '../../assets/imgs/profile.jpg'
         },
@@ -117,3 +129,4 @@ export class ModalPage {
   }
 
 }
+ 
